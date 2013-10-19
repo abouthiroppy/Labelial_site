@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <title>Labelial</title>
+    <meta charset="UTF-8">
+    <!--[if lt IE 9] -->
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <!-- <link type="" -->
+    <link rel="stylesheet" href="css/bootstrap.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="css/responsive.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="screen">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
+    <link rel="shortcut icon" href="img/logo.png" type="image/png">
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/superfish.js"></script>
+    <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+    <script type="text/javascript">
+      if($(window).width()>1024){document.write("<"+"script src='js/jquery.preloader.js'></"+"script>");}
+    </script>
+    <script>
+      $(window).load(function() {
+        $x = $(window).width();
+        if($x > 1024){
+          $("#content .row").preloader();
+        }
+        $('.spinner').animate({'opacity':0},1000,'easeOutCubic',function (){jQuery(this).css('display','none')});
+     });
+    </script>
+  </head>
+  <body>
+    <div class="spinner"></div>
+    <header>
+      <div class="container clearfix">
+        <div class="row">
+          <div class="span12">
+            <div class="navbar navbar_">
+              <div class="container">
+                <h1 class="brand brand_"><a href="index.html" style="color:#007AFF;font-size:70px;"><br>Labelial</a></h1>
+                <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse_">Menu <span class="icon-bar"></span> </a>
+                <div class="nav-collapse nav-collapse_  collapse">
+                  <ul class="nav sf-menu">
+                    <li class="sub-menu active"><a href="index.html">Home</a></li>
+                    <li><a href="function.html">function</a></li>
+                    <li><a style="cursor:default;">Version</a>
+                      <ul>
+                        <li><a href="history.html">History</a></li>
+                        <li><a href="futureWork.html">Future work</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="info.html">Info</a></li>
+                    <li><a href="contact.html">contact</a></li>
+                    <li>
+                        <a  style="cursor:default;">Language</a>
+                        <ul>
+                            <li>
+                                <a href="../index.html">English</a>
+                            </li>
+                            <li>
+                                <a href="index.html">Japanese</a>
+                            </li>
+                        </ul>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="bg-content">
+      <div id="content"><div class="ic"></div>
+        <div class="container">
+            <article class="span12">
+              <h3>Home</h3>
+              <h3 style="color:red">ただいま申請中</h3>
+            </article>
+          <div class="clear"></div>
+          <div id="getItem" style="width:1000px">
+            <div class="store">
+              <p>Free version</p>
+              <a href="#"><img src="img/app-store.png" alt=""></a>
+            </div>
+            <div class="store">
+              <p>Paid version</p>
+              <a href="#"><img src="img/app-store.png" alt=""></a>
+            </div>
+            <div class="store">
+              <p>coming soon(?)</p>
+              <a href="#"><img src="img/googlePlay.png" alt=""></a>
+            </div>
+          </div>
+          <div class="free-m">
+            <p>※ 無料版は通知センターに2つまでしかメモを置けません。 有料版は$0.99(US),¥85(JP)です。</p>
+          </div>
+              <ul class="thumbnails thumbnails-1 list-services" style="clear:both;padding-top: 10px">
+                <li class="span4">
+                  <div class="thumbnail thumbnail-1">
+                    <img  src="img/page-1.png" alt="">
+                    <section>
+                      <p>起動した瞬間、キーボードが出てくるのであなたのメモを取り逃がしません。</p>
+                    </section>
+                  </div>
+                </li>
+                <li class="span4">
+                   <div class="thumbnail thumbnail-1">
+                    <img  src="img/page-2.png" alt="">
+                    <section>
+                      <p>洗練された独自のUIによって使いやすさを極限まで発揮。</p>
+                    </section>
+                  </div>
+                </li>
+                <li class="span4">
+                  <div class="thumbnail thumbnail-1">
+                    <img  src="img/page-3.png" alt="">
+                    <section>
+                      <p>通知センターにメモを残すことが可能なため他のアプリ起動中や画面ロック中でもアプリを起動せずに素早く確認。</p>
+                    </section>
+                  </div>
+                </li>
+                <li class="span4">
+                  <div class="thumbnail thumbnail-1">
+                    <img  src="img/page-4.png" alt="">
+                    <section>
+                      <p>あなたが取った過去のメモをこのアプリは忘れません。また検索して過去のメモを探すことも可能。</p>
+                    </section>
+                  </div>
+                </li>
+                <li class="span4">
+                  <div class="thumbnail thumbnail-1">
+                    <img  src="img/page-5.png" alt="">
+                    <section>
+                      <p>一歩先のメモ帳へ。不満点やほしい機能があるなら開発者に連絡しましょう。その不満点は開発者も感じているはずです。</p>
+                    </section>
+                  </div>
+                </li>
+                <li class="span4">
+                  <div class="thumbnail thumbnail-1">
+                    <img  src="img/page-6.png" alt="">
+                    <section>
+                      <p>Labelialは未だ開発中のアプリです。ポリシーは"素早くメモをとり素早く確認する"。様々な機能はこれからも追加されていくことでしょう。</p>
+                      <a href="history.html">release note</a>
+                    </section>
+                  </div>
+                </li>
+            </ul>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="container clearfix">
+        <ul class="list-social pull-right">
+          <li><a class="icon-1" href="http://www.facebook.com/sharer.php?u=http://about-hiroppy.com/Labelial&t=Labelial"></a></li>
+          <li><a class="icon-3" href="https://twitter.com/share?url=http://about-hiroppy.com/Labelial&text=iOS App Labelial&via=about_hiroppy"></a></li>
+          <li><a class="icon-4" href="#"></a></li>
+        </ul>
+      <div class="privacy pull-left">© 2013 by Yuta Hiroto<br><a href="http://about-hiroppy.com" target="_blank">mainPage</a></div>
+      </div>
+    </footer>
+  </body>
+</html>

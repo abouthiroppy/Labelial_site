@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <title>Labelial</title>
+    <meta charset="UTF-8">
+    <!--[if lt IE 9] -->
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <!-- <link type="" -->
+    <link rel="stylesheet" href="css/bootstrap.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="css/responsive.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="screen">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
+    <link rel="shortcut icon" href="img/logo.png" type="image/png">
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/superfish.js"></script>
+    <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+    <script type="text/javascript">
+      if($(window).width()>1024){document.write("<"+"script src='js/jquery.preloader.js'></"+"script>");}
+    </script>
+    <script>
+      $(window).load(function() {
+        $x = $(window).width();
+        if($x > 1024){
+          $("#content .row").preloader();
+        }
+        $('.spinner').animate({'opacity':0},1000,'easeOutCubic',function (){jQuery(this).css('display','none')});
+     });
+    </script>
+    <script>
+    !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
+    </script>
+  </head>
+  <body>
+    <div class="spinner"></div>
+    <header>
+      <div class="container clearfix">
+        <div class="row">
+          <div class="span12">
+            <div class="navbar navbar_">
+              <div class="container">
+                <h1 class="brand brand_"><a href="index.html" style="color:#007AFF;font-size:70px;"><br>Labelial</a></h1>
+                <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse_">Menu <span class="icon-bar"></span> </a>
+                <div class="nav-collapse nav-collapse_  collapse">
+                  <ul class="nav sf-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li class="sub-menu active"><a href="function.html">function</a></li>
+                    <li><a style="cursor:default;">Version</a>
+                      <ul>
+                        <li><a href="history.html">History</a></li>
+                        <li><a href="futureWork.html">Future work</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="info.html">Info</a></li>
+                    <li><a href="contact.html">contact</a></li>
+                    <li>
+                        <a  style="cursor:default;">Language</a>
+                        <ul>
+                            <li>
+                                <a href="../index.html">English</a>
+                            </li>
+                            <li>
+                                <a href="index.html">Japanese</a>
+                            </li>
+                        </ul>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="bg-content">
+      <div id="content"><div class="ic"></div>
+        <div class="container">
+            <article class="span12">
+              <h3>Function</h3>
+            </article>
+            <div id="page-1">
+              <img  src="img/page-1.png" alt="" class="normalImage">
+              <ul class="right-explain">
+                <li>
+                  <p class="button">clear</p>
+                  <h3>今書いているメモを消します</h3>
+                </li>
+                <li>
+                  <p class="button">address</p>
+                  <h3>電話帳を参照します</h3>
+                </li>
+                <li>
+                  <p class="button">twitter</p>
+                  <h3>twitterと連携します</h3>
+                </li>
+                <li>
+                  <p class="button">post</p>
+                  <h3>メモを通知センターに送ります</h3>
+                </li>
+              </ul>
+            </div>
+        </div>
+        <div class="container">
+          <img  src="img/page-6-2.png" alt="" class="normalImage">
+              <ul class="right-explain" style="padding-top:35px">
+                <li>
+                  <h3 style="padding-left: 0px">右の画像の①が通知センターの状態を示します。</h3>
+                  <a style="pointer-events:none;cursor:default;">
+                    ※ iosは各アプリに対して最大5つしか通知センターに情報を残せません。</a>
+                  <h3 style="padding-left: 0px">右の画像の②が今までに書いたメモの履歴になります。</h3>
+                </li>
+                <li>
+                  <img src="img/edit.png" alt="" class="icon-page2" style="width:30px;height:30px">
+                  <h3>そのメモの中身を変更します。</h3>
+                </li>
+                <li>
+                  <img src="img/cancel.png" alt="" class="icon-page2">
+                  <h3>通知センターにあるそのメモを消します。</h3>
+                </li>
+                <li>
+                  <img src="img/cog.png" alt="" class="icon-page2">
+                  <h3>設定画面を開きます。</h3>
+                </li>
+                <li>
+                  <img src="img/trash.png" alt="" class="icon-page2">
+                  <h3>通知センターにあるすべてのメモを消します。</h3>
+                </li>
+                <li>
+                  <img src="img/move.png" alt="" class="icon-page2">
+                  <h3>通知センターにあるメモの順番を変更します。</h3>
+                </li>
+                <li>
+                  <img src="img/palette.png" alt="" class="icon-page2">
+                  <h3>各メモに対してカラーラベルをつけることができます。</h3>
+                  <h3>紫、緑、青、黄色、茶色、赤、オレンジの７種類です。</h3>
+                </li>
+                <li>
+                  <img src="img/search.png" alt="" class="icon-page2">
+                  <h3>②からメモを検索します。</h3>
+                </li>
+                <li>
+                  <img src="img/plus.png" alt="" class="icon-page2">
+                  <h3>②から①へメモを送信します。</h3>
+                </li>
+              </ul>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="container clearfix">
+        <ul class="list-social pull-right">
+          <li><a class="icon-1" href="http://www.facebook.com/sharer.php?u=http://about-hiroppy.com/Labelial&t=Labelial"></a></li>
+          <li><a class="icon-3" href="https://twitter.com/share?url=http://about-hiroppy.com/Labelial&text=iOS App Labelial&via=about_hiroppy"></a></li>
+          <li><a class="icon-4" href="#"></a></li>
+        </ul>
+      <div class="privacy pull-left">© 2013 by Yuta Hiroto<br><a href="http://about-hiroppy.com" target="_blank">mainPage</a></div>
+      </div>
+    </footer>
+  </body>
+</html>
